@@ -1,7 +1,7 @@
 #!/usr/bin/python
 # Blackhydra Bruteforcers
-# Mod by The Sixty Nine
-# Github: github.com/thesixtynine/Blackhydra
+# Coded by Senja
+# Github: github.com/thedarksec/Blackhydra
 
 """
 This program is just a small program to shorten brute force sessions on BlackHydra :)
@@ -40,8 +40,8 @@ logo = """\033[1;77m
 print (logo)
 
 print ("\033[0m[\033[1;94m#\033[0m] \033[77mTHC Hydra BruteForcers")
-print ("\033[0m[\033[1;93m*\033[0m] \033[77mMod by The Sixty Nine")
-print ("\033[0m[\033[1;96m*\033[0m] \033[77mMy Github: @thesixtynine")
+print ("\033[0m[\033[1;93m*\033[0m] \033[77mCoded by Senja")
+print ("\033[0m[\033[1;96m*\033[0m] \033[77mMy Github: @thedarksec")
 time.sleep(1)
 print
 print ("\033[0m[\033[1;92m01\033[0m] \033[1;77mCisco    \033[0m[\033[1;92m07\033[0m] \033[1;77mTelnet    \033[0m[\033[1;92m13\033[0m] \033[1;77mImap     \033[0m[\033[1;92m19\033[0m] \033[1;77mRedis  ")
