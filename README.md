@@ -3,6 +3,10 @@
 </a></p>
 <h1 align="center">Black Hydra</h1>
 
+#### Feature:
+```
+THC Hydra
+```
 #### Usage:
 ```
 git clone https://github.com/stepbystepexe/Blackhydra
