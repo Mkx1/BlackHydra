@@ -5,10 +5,6 @@
 
 #### Usage:
 ```
-pkg update && pkg upgrade
-apt-get install git
-apt-get install python2
-apt-get install hydra
 git clone https://github.com/stepbystepexe/Blackhydra
 cd Blackhydra
 ls
