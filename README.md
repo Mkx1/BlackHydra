@@ -5,7 +5,7 @@
 
 #### Cara Menginstall:
 ```
-git clone https://github.com/stepbystepexe/Blackhydra
+git clone https://github.com/stepbystepexe/BlackHydra
 cd Blackhydra
 ls
 python2 blackhydra.py
