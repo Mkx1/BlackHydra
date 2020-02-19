@@ -10,7 +10,7 @@ Versi       : 2.0 (Update: 11 Agustus 2020, 2:00 PM)
 Tanggal     : 01 Februari 2019
 Author      : Nedi Senja
 Tujuan      : Sengaja di encrypt dari THC Hydra
-              biar lebih simpel
+              biar lebih simpel.
 Terimakasih : Allah SWT.
               FR13NDS, & seluruh
               manusia seplanet bumi
