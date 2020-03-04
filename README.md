@@ -35,7 +35,7 @@ python2 blackhydra.py
 ```
 #### Screenshot:
 <p align="center">
-  <img src="https://github.com/stepbystepexe/Blackhydra/blob/master/Screenshot.png">
+  <img src="https://github.com/stepbystepexe/Blackhydra/blob/master/Skrinsut.png">
 </a></p>
 
 #### Paypal:
