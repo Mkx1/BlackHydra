@@ -1,8 +1,7 @@
-<p align="center">
-  <img src="https://github.com/stepbystepexe/Blackhydra/blob/master/Logo.png" width="200"/>
-</a></p>
-<h1 align="center">Black Hydra</h1>
-
+# BlackHydra:
+**```BlackHydra```** adalah tool cracker jaringan paralel. BlackHydra bekerja dengan menggunakan seperangkat metode untuk memecahkan kata sandi menggunakan berbagai pendekatan menghasilkan kata sandi yang mungkin, menggunakan metode seperti serangan daftar kata, serangan **```brute-force```** dan banyak metode lainnya. tool ini di encrypt dari **```THC Hydra```**
+#### Screenshot:
+![](./Skrinsut.png)
 #### Informasi:
 ```
 Nama        : BlackHydra
@@ -22,10 +21,8 @@ NB          : Manusia gax ada yang sempurna
 
 [ Gunakan tool ini dengan bijak ]
 ```
-
-#### Daftar  Fitur:
-+ THC Hydra
-
+#### Fitur:
++ thc.hydra brute-force
 #### Cara Menginstall:
 ```
 git clone https://github.com/stepbystepexe/BlackHydra
@@ -33,12 +30,10 @@ cd Blackhydra
 ls
 python2 blackhydra.py
 ```
-#### Screenshot:
-<p align="center">
-  <img src="https://github.com/stepbystepexe/Blackhydra/blob/master/Skrinsut.png">
-</a></p>
-
+#### Kontak:
++ Email d_q16x@outlook.co.id
++ WhatsApp https://tinyurl.com/wel4alo
 #### Paypal:
-https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=CLKRT5QXXFJY4&source=url
-#### LiberaPay:
++ Onclick https://bit.ly/3dcEQcN
 <noscript><a href="https://liberapay.com/stepbystepexe/donate"><img alt="Donate using Liberapay" src="https://liberapay.com/assets/widgets/donate.svg"></a></noscript>
+>**Created by Nedi Senja**
