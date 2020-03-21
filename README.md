@@ -35,5 +35,6 @@ python2 blackhydra.py
 + WhatsApp https://tinyurl.com/wel4alo
 #### Paypal:
 + Onclick https://bit.ly/3dcEQcN
+#### LiberaPay:
 <noscript><a href="https://liberapay.com/stepbystepexe/donate"><img alt="Donate using Liberapay" src="https://liberapay.com/assets/widgets/donate.svg"></a></noscript>
 >**Created by Nedi Senja**
