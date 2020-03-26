@@ -2,7 +2,7 @@
 <h5 align="center">BlackHydra adalah tool cracker jaringan paralel. BlackHydra bekerja dengan menggunakan seperangkat metode untuk memecahkan kata sandi menggunakan berbagai pendekatan menghasilkan kata sandi yang mungkin, menggunakan metode seperti serangan daftar kata, serangan  brute-force dan banyak metode lainnya. tool ini di encrypt dari THC Hydra.</h5>
 
 <p align="center">
-  <a href="www.python.org">
+  <a href="https://www.python.org">
     <img src="https://img.shields.io/badge/Language-Python3-blue.svg">
   </a>
   <a href="https://github.com/stepbystepexe/BlackHydra/blob/master/LICENSE">
