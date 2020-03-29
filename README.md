@@ -9,7 +9,7 @@
     <img src="https://img.shields.io/badge/License-GPL%203-red.svg">
   </a>
   <a href="https://github.com/stepbystepexe/BlackHydra/releases">
-    <img src="https://img.shields.io/badge/Release-1.1-success.svg">
+    <img src="https://img.shields.io/badge/Release-1.2-success.svg">
   </a>
   <a href="https://github.com/stepbystepexe/BlackHydra/pulls">
     <img src="https://img.shields.io/badge/Pull%20Request-0-important.svg">
@@ -46,7 +46,7 @@
 ### Informasi:
 ```text
 Nama        : BlackHydra
-Versi       : 2.0 (Update: 11 Maret 2020, 2:00 PM)
+Versi       : 1.2 (Update: 11 Maret 2020, 2:00 PM)
 Tanggal     : 01 September 2019
 Author      : Nedi Senja
 Tujuan      : Sengaja di encrypt dari THC Hydra
