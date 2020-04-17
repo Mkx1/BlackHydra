@@ -3,7 +3,7 @@
  </p>
 <p align="center">
   <img src="Logo.png" width="100">
-  BlackHydra is a parallel network cracker tool. BlackHydra works by using a set of methods to crack passwords using various approaches to generate possible passwords, using methods such as word list attacks, brute-force attacks and many other methods. This tool is encrypted from THC Hydra.
+  BlackHydra is a parallel network cracker tool. BlackHydra works by using a set of methods to crack passwords using various approaches to generate possible passwords. using methods such as word list attacks, brute-force attacks and many other methods. This tool is encrypted from THC Hydra.
 </p>
 <p align="center">
   <a href="https://www.python.org">
