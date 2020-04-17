@@ -32,7 +32,7 @@
   </a>
 </p>
 <p align="center">
-  Tampilan
+  Screenshot
 </p>
 <p align="center">
   <img src="Skrinsut.png" width="300">
@@ -41,35 +41,35 @@
 <p align="center">
   Made with ❤️ by <a href="https://github.com/stepbystepexe">Nedi Senja</a>
 </p>
+</h5>
 <p align="center">
  <img src="https://img.shields.io/twitter/url?url=https%3A%2F%2Fgithub.com%2Stepbystepexe%2FBlackHydra" alt="Twitter">
 </p>
-</h5>
 
-### Informasi:
+### Information:
 ```text
-Nama        : BlackHydra
-Versi       : 1.2 (Update: 11 Maret 2020, 2:00 PM)
-Tanggal     : 01 September 2019
+Name        : BlackHydra
+Version     : 1.2 (Update: 11 March 2020, 2:00 PM)
+Date        : 01 September 2019
 Author      : Nedi Senja
-Tujuan      : Sengaja di encrypt dari THC Hydra
-              biar lebih simpel
-Terimakasih : Allah SWT.
-              FR13NDS, & seluruh
-              manusia seplanet bumi
-NB          : Manusia gax ada yang sempurna
-              sama kaya tool ini.
-              Silahkan laporkan kritik atau saran
-              Ke - Email: d_q16x@outlook.co.id
-                 - WhatsApp: https://tinyurl.com/wel4alo
+Purpose     : Accidentally encrypted from THC Hydra
+              even more simple
+Thankyou    : Allah SWT.
+              FR13NDS, & all over
+              humans on planet earth
+NB          : Humans are not perfect
+              as rich as this tool.
+              Please report criticism or suggestions
+              To - Email: d_q16x@outlook.co.id
+                 - WhatsApp: tinyurl.com/wel4alo
 
-[ Gunakan tool ini dengan bijak ]
+[ Use this tool wisely. Thanks ]
 ```
 
-### Fitur:
+### Features:
 + thchydra-bruteforce
 
-### Installisasi:
+### Installation:
 ```text
 git clone https://github.com/stepbystepexe/BlackHydra
 cd BlackHydra
@@ -77,11 +77,11 @@ ls
 chmod +x
 ./blackhydra.py
 ```
-### Kontak:
+### Contact:
 
 <h5> <a href="http://d_q16x@outlook.co.id">Email: d_q16x@outlook.co.id</a>
 </h5>
-<h5> <a href="https://tinyurl.com/wel4alo">WhatsApp: https://tinyurl.com/wel4alo</a>
+<h5> <a href="https://tinyurl.com/wel4alo">WhatsApp: tinyurl.com/wel4alo</a>
 </h5>
 
 ### LiberaPay:
