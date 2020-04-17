@@ -1,9 +1,13 @@
-<h1 align="center">BlackHydra</h1>
-<h5 align="center">BlackHydra adalah tool cracker jaringan paralel. BlackHydra bekerja dengan menggunakan seperangkat metode untuk memecahkan kata sandi menggunakan berbagai pendekatan menghasilkan kata sandi yang mungkin, menggunakan metode seperti serangan daftar kata, serangan  brute-force dan banyak metode lainnya. tool ini di encrypt dari THC Hydra.</h5>
-
+<p align="left">
+  <a><img title="Built With Love" src="https://forthebadge.com/images/badges/built-with-love.svg" ></a>
+ </p>
+<p align="center">
+  <img src="Logo.png" width="100">
+  BlackHydra is a parallel network cracker tool. BlackHydra works by using a set of methods to crack passwords using various approaches to generate possible passwords, using methods such as word list attacks, brute-force attacks and many other methods. This tool is encrypted from THC Hydra.
+</p>
 <p align="center">
   <a href="https://www.python.org">
-    <img src="https://img.shields.io/badge/Language-Python3-blue.svg">
+    <img src="https://img.shields.io/badge/Python-3.8-blue.svg">
   </a>
   <a href="https://github.com/stepbystepexe/BlackHydra/blob/master/LICENSE">
     <img src="https://img.shields.io/badge/License-GPL%203-red.svg">
@@ -20,28 +24,27 @@
   <a href="https://github.com/stepbystepexe/BlackHydra/issues">
     <img src="https://img.shields.io/badge/Issues-1-yellowgreen.svg">
   </a>
-  <a href="https://github.com/stepbystepexe/BlackHydra/security/advisories">
-    <img src="https://img.shields.io/badge/Security-Patch-ff69b4.svg">
+  <a href="https://github.com/stepbystepexe/BlackHydra/security/policy">
+    <img src="https://img.shields.io/badge/Security-Policy-ff69b4.svg">
   </a>
   <a href="https://opensource.org">
-    <img src="https://img.shields.io/badge/Open%20Source-●-yellow.svg">
+    <img src="https://img.shields.io/badge/Open%20Source-●-lightgrey.svg">
   </a>
 </p>
-
-<h4 align="center">Tampilan</h4>
 <p align="center">
-  <img src="https://github.com/stepbystepexe/BlackHydra/blob/master/Skrinsut.png" width="300">
-</a></p>
-
+  Tampilan
+</p>
+<p align="center">
+  <img src="Skrinsut.png" width="300">
+</p>
 <h5>
 <p align="center">
   Made with ❤️ by <a href="https://github.com/stepbystepexe">Nedi Senja</a>
-</h5>
 </p>
-
 <p align="center">
  <img src="https://img.shields.io/twitter/url?url=https%3A%2F%2Fgithub.com%2Stepbystepexe%2FBlackHydra" alt="Twitter">
 </p>
+</h5>
 
 ### Informasi:
 ```text
