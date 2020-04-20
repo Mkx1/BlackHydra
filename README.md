@@ -53,7 +53,7 @@ Version     : 1.2 (Update: 11 March 2020, 2:00 PM)
 Date        : 01 September 2019
 Author      : Nedi Senja
 Purpose     : Accidentally encrypted from THC Hydra
-              even more simple
+              even more simple.
 Thankyou    : Allah SWT.
               FR13NDS, & all over
               humans on planet earth
