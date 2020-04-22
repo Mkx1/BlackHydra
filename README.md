@@ -9,8 +9,8 @@
 </p>
 
 [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
-[![Build Status](https://img.shields.io/badge/build-failing-cb2431.svg)](https://github.com/stepbystepexe/Quotes/pulls)
-[![Issues Welcome](https://img.shields.io/badge/issues%20open-welcome-brightgreen.svg)](https://github.com/stepbystepexe/Quotes/issues)
+[![Build Status](https://img.shields.io/badge/build-failing-cb2431.svg)](https://github.com/stepbystepexe/BlackHydra/pulls)
+[![Issues Welcome](https://img.shields.io/badge/issues%20open-welcome-brightgreen.svg)](https://github.com/stepbystepexe/BlackHydra/issues)
 
 <p align="center">
   <sub><b>Screenshot</sub></b>
@@ -68,7 +68,7 @@ Important contact Email [**Outlook**](http://d_q16x@outlook.co.id)
 Join using my WhatsApp [**Online**](https://tinyurl.com/wel4alo)
 
 # License
-Anonymous tool is an open source license [`MIT`](https://opensource.org/licenses/MIT) © Github 2020
+Anonymous tool is an open source license [`GPL 3`](https://opensource.org/licenses/gpl-license) © Github 2020
 
 ### LiberaPay:
 <noscript><a href="https://liberapay.com/stepbystepexe/donate"><img alt="Donate using Liberapay" src="https://liberapay.com/assets/widgets/donate.svg"></a></noscript>
