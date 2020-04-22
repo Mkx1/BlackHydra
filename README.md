@@ -2,37 +2,18 @@
   <a><img title="Built With Love" src="https://forthebadge.com/images/badges/built-with-love.svg" ></a>
  </p>
 <p align="center">
+<sup>
   <img src="Logo.png" width="100">
   BlackHydra is a parallel network cracker tool. BlackHydra works by using a set of methods to crack passwords using various approaches to generate possible passwords. using methods such as word list attacks, brute-force attacks and many other methods. This tool is encrypted from THC Hydra.
+</sup>
 </p>
+
+[![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
+[![Build Status](https://img.shields.io/badge/build-failing-cb2431.svg)](https://github.com/stepbystepexe/Quotes/pulls)
+[![Issues Welcome](https://img.shields.io/badge/issues%20open-welcome-brightgreen.svg)](https://github.com/stepbystepexe/Quotes/issues)
+
 <p align="center">
-  <a href="https://www.python.org">
-    <img src="https://img.shields.io/badge/Python-3.8-blue.svg">
-  </a>
-  <a href="https://github.com/stepbystepexe/BlackHydra/blob/master/LICENSE">
-    <img src="https://img.shields.io/badge/License-GPL%203-red.svg">
-  </a>
-  <a href="https://github.com/stepbystepexe/BlackHydra/releases">
-    <img src="https://img.shields.io/badge/Release-1.2-success.svg">
-  </a>
-  <a href="https://github.com/stepbystepexe/BlackHydra/pulls">
-    <img src="https://img.shields.io/badge/Pull%20Request-0-important.svg">
-  </a>
-  <a href="https://github.com/stepbystepexe/BlackHydra/projects">
-    <img src="https://img.shields.io/badge/Projects-None-blueviolet.svg">
-  </a>
-  <a href="https://github.com/stepbystepexe/BlackHydra/issues">
-    <img src="https://img.shields.io/badge/Issues-1-yellowgreen.svg">
-  </a>
-  <a href="https://github.com/stepbystepexe/BlackHydra/security/policy">
-    <img src="https://img.shields.io/badge/Security-Policy-ff69b4.svg">
-  </a>
-  <a href="https://opensource.org">
-    <img src="https://img.shields.io/badge/Open%20Source-●-008080.svg">
-  </a>
-</p>
-<p align="center">
-  Screenshot
+  <sub><b>Screenshot</sub></b>
 </p>
 <p align="center">
   <img src="Skrinsut.png" width="300">
@@ -66,23 +47,28 @@ NB          : Humans are not perfect
 [ Use this tool wisely. Thanks ]
 ```
 
-### Features:
-+ thchydra-bruteforce
+### Forked:
+Forked From Tool [THC Hydra](https://github.com/vanhauser-thc/thc-hydra) Which has been modified for easy simplicity
 
 ### Installation:
+How to install on termux via git.
+follow or use step by step to install the blackhydra tool in the way below. then install the package first, which is the package that needs [`python`](https://www.python.org) [`hydra`](https://github.com/vanhauser-thc/thc-hydra) [`git`](https://github.com/termux/termux-packages) then run
 ```text
 git clone https://github.com/stepbystepexe/BlackHydra
 cd BlackHydra
 ls
 chmod +x
+```
+the last step is to run the command
+```text
 ./blackhydra.py
 ```
 ### Contact:
+Important contact Email [**Outlook**](http://d_q16x@outlook.co.id)
+Join using my WhatsApp [**Online**](https://tinyurl.com/wel4alo)
 
-<h5> <a href="http://d_q16x@outlook.co.id">Email: d_q16x@outlook.co.id</a>
-</h5>
-<h5> <a href="https://tinyurl.com/wel4alo">WhatsApp: tinyurl.com/wel4alo</a>
-</h5>
+# License
+Anonymous tool is an open source license [`MIT`](https://opensource.org/licenses/MIT) © Github 2020
 
 ### LiberaPay:
 <noscript><a href="https://liberapay.com/stepbystepexe/donate"><img alt="Donate using Liberapay" src="https://liberapay.com/assets/widgets/donate.svg"></a></noscript>
