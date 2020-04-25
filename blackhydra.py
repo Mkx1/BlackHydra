@@ -1,29 +1,29 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 # BlackHydra
-# Coded by Nedi Senja
-# Github: https://github.com/stepbystepexe/Blackhydra
+# Coded by stepbystepexe
+# Github: https://github.com/stepbystepexe/BlackHydra
 
-import os, sys, time, random
+import os, sys, time
 from time import sleep
 
 info = """
-Nama        : BlackHydra
-Versi       : 1.2 (Update: 11 Maret 2020, 2:00 PM)
-Tanggal     : 01 September 2019
+Name        : BlackHydra
+Version     : 1.3 (Update: 11 March 2020, 2:00 PM)
+Date        : 01 September 2019
 Author      : Nedi Senja
-Tujuan      : Sengaja di encrypt dari THC Hydra
-              biar lebih simpel
-Terimakasih : Allah SWT.
-              FR13NDS, & seluruh
-              manusia seplanet bumi
-NB          : Manusia gax ada yang sempurna
-              sama kaya tool ini.
-              Silahkan laporkan kritik atau saran
-              Ke - Email: d_q16x@outlook.co.id
-                 - WhatsApp: https://tinyurl.com/wel4alo
+Purpose     : Accidentally encrypted from THC Hydra
+              even more simple.
+Thankyou    : Allah SWT.
+              FR13NDS, & all over
+              humans on planet earth
+NB          : Humans are not perfect
+              as rich as this tool.
+              Please report criticism or suggestions
+              To - Email: d_q16x@outlook.co.id
+                 - WhatsApp: tinyurl.com/wel4alo
 
-[ \033[4mGunakan tool ini dengan bijak \033[0m]\n """
+[ Use this tool wisely. Thanks ] """
 
 example = """\033[0;41;77;1m[          BlackHydra, My Github: @stepbystepexe         ]\033[0m"""
 
@@ -37,6 +37,13 @@ def restart():
     python = sys.executable
     os.execl(python, python, * sys.argv)
     curdir = os.getcwd()
+
+def play():
+    animation = '|/-\\'
+    for i in range(30):
+        time.sleep(0.1)
+        sys.stdout.write('\r\033[0m[\033[0;32m●\033[0m] Processing (' + animation[(i % len(animation))]+')')
+        sys.stdout.flush()
 
 def loads():
     o = [' .   ',' ..  ',' ... ']
@@ -57,8 +64,8 @@ def home():
     print(logo)
     print(example)
     print()
-    write("\033[0m[ \033[32mINFO \033[0m] \033[3mSebelum memulai pastikan Anda mempunyai kuota")
-    write("         Yang gede, karena prosesnya cukup lumayan lama\033[0m\n\n")
+    write("\033[0m[ \033[32mINFO \033[0m] \033[3mBefore starting make sure you have a quota")
+    write("         The big one, because the process is quite long\033[0m\n\n")
 
 os.system('clear')
 os.system('reset')
@@ -74,15 +81,15 @@ print("\033[0m[\033[1;96;2m04\033[0m] \033[1;77mGmail    \033[0m[\033[1;96;2m10\
 print("\033[0m[\033[1;96;2m05\033[0m] \033[1;77mSSH      \033[0m[\033[1;96;2m11\033[0m] \033[1;77mRDP       \033[0m[\033[1;96;2m17\033[0m] \033[1;77mXmpp     \033[0m[\033[1;96;2m23\033[0m] \033[1;77mSocks5 ")
 print("\033[0m[\033[1;96;2m06\033[0m] \033[1;77mTeam     \033[0m[\033[1;96;2m12\033[0m] \033[1;77mMySQL     \033[0m[\033[1;96;2m18\033[0m] \033[1;77mAdam     \033[0m[\033[1;96;2m24\033[0m] \033[1;77mrLogin ")
 print()
-print("\033[0m[\033[93;1m&\033[0m] LISENSI")
-print("\033[0m[\033[94;1m#\033[0m] Informasi")
-print("\033[0m[\033[92;1m*\033[0m] Perbarui")
-print("\033[0m[\033[91;1m-\033[0m] Keluar")
+print("\033[0m[\033[93;1m&\033[0m] LICENSE")
+print("\033[0m[\033[94;1m#\033[0m] Information")
+print("\033[0m[\033[92;1m*\033[0m] Update")
+print("\033[0m[\033[91;1m-\033[0m] Exit")
 print()
-option = input("\033[0m(\033[105;77;1m/\033[0m) \033[1;77mMasukan opsi: \033[0m")
+option = input("\033[0m(\033[105;77;1m/\033[0m) \033[1;77mChoose an option: \033[0m")
 if option == '01' or option == '1':
         print()
-        write("\033[0m[\033[32m●\033[0m] \033[77;1mSedang memproses ...\033[0m")
+        play()
         sleep(1)
         home()
         word = input("\x1b[0m[\x1b[106;90;1m Wordlist \x1b[0m] ")
@@ -96,7 +103,7 @@ if option == '01' or option == '1':
         sys.exit(1)
 elif option == '02' or option == '2':
         print()
-        write("\033[0m[\033[32m●\033[0m] \033[77;1mSedang memproses ...\033[0m")
+        play()
         sleep(1)
         home()
         word = input("\x1b[0m[\x1b[106;90;1m Wordlist \x1b[0m] ")
@@ -110,7 +117,7 @@ elif option == '02' or option == '2':
         sys.exit(1)
 elif option == '03' or option == '3':
         print()
-        write("\033[0m[\033[32m●\033[0m] \033[77;1mSedang memproses ...\033[0m")
+        play()
         sleep(1)
         home()
         user = input("\x1b[0m[\x1b[101;77;1m Username \x1b[0m] ")
@@ -125,7 +132,7 @@ elif option == '03' or option == '3':
         sys.exit(1)
 elif option == '04' or option == '4':
         print()
-        write("\033[0m[\033[32m●\033[0m] \033[77;1mSedang memproses ...\033[0m")
+        play()
         sleep(1)
         home()
         email = input("\x1b[0m[\x1b[47;90;1m  Emails  \x1b[0m] ")
@@ -139,7 +146,7 @@ elif option == '04' or option == '4':
         sys.exit(1)
 elif option == '05' or option == '5':
         print()
-        write("\033[0m[\033[32m●\033[0m] \033[77;1mSedang memproses ...\033[0m")
+        play()
         sleep(1)
         home()
         user = input("\x1b[0m[\x1b[101;77;1m Username \x1b[0m] ")
@@ -154,7 +161,7 @@ elif option == '05' or option == '5':
         sys.exit(1)
 elif option == '06' or option == '6':
         print()
-        write("\033[0m[\033[32m●\033[0m] \033[77;1mSedang memproses ...\033[0m")
+        play()
         sleep(1)
         home()
         user = input("\x1b[0m[\x1b[101;77;1m Username \x1b[0m] ")
@@ -169,7 +176,7 @@ elif option == '06' or option == '6':
         sys.exit(1)
 elif option == '07' or option == '7':
         print()
-        write("\033[0m[\033[32m●\033[0m] \033[77;1mSedang memproses ...\033[0m")
+        play()
         sleep(1)
         home()
         user = input("\x1b[0m[\x1b[101;77;1m Username \x1b[0m] ")
@@ -184,7 +191,7 @@ elif option == '07' or option == '7':
         sys.exit(1)
 elif option == '08' or option == '8':
         print()
-        write("\033[0m[\033[32m●\033[0m] \033[77;1mSedang memproses ...\033[0m")
+        play()
         sleep(1)
         home()
         email = input("\x1b[0m[\x1b[47;90;1m  Emails  \x1b[0m] ")
@@ -198,7 +205,7 @@ elif option == '08' or option == '8':
         sys.exit(1)
 elif option == '09' or option == '9':
         print()
-        write("\033[0m[\033[32m●\033[0m] \033[77;1mSedang memproses ...\033[0m")
+        play()
         sleep(1)
         home()
         email = input("\x1b[0m[\x1b[47;90;1m  Emails  \x1b[0m] ")
@@ -212,7 +219,7 @@ elif option == '09' or option == '9':
         sys.exit(1)
 elif option == '10':
         print()
-        write("\033[0m[\033[32m●\033[0m] \033[77;1mSedang memproses ...\033[0m")
+        play()
         sleep(1)
         home()
         user = input("\x1b[0m[\x1b[101;77;1m Username \x1b[0m] ")
@@ -227,7 +234,7 @@ elif option == '10':
         sys.exit(1)
 elif option == '11':
         print()
-        write("\033[0m[\033[32m●\033[0m] \033[77;1mSedang memproses ...\033[0m")
+        play()
         sleep(1)
         home()
         user = input("\x1b[0m[\x1b[101;77;1m Username \x1b[0m] ")
@@ -242,7 +249,7 @@ elif option == '11':
         sys.exit(1)
 elif option == '12':
         print()
-        write("\033[0m[\033[32m●\033[0m] \033[77;1mSedang memproses ...\033[0m")
+        play()
         sleep(1)
         home()
         user = input("\x1b[0m[\x1b[106;90;1m Username \x1b[0m] ")
@@ -256,7 +263,7 @@ elif option == '12':
         sys.exit(1)
 elif option == '13':
         print()
-        write("\033[0m[\033[32m●\033[0m] \033[77;1mSedang memproses ...\033[0m")
+        play()
         sleep(1)
         home()
         user = input("\x1b[0m[\x1b[101;77;1m Username \x1b[0m] ")
@@ -271,7 +278,7 @@ elif option == '13':
         sys.exit(1)
 elif option == '14':
         print()
-        write("\033[0m[\033[32m●\033[0m] \033[77;1mSedang memproses ...\033[0m")
+        play()
         sleep(1)
         home()
         user = input("\x1b[0m[\x1b[101;77;1m Username \x1b[0m] ")
@@ -286,7 +293,7 @@ elif option == '14':
         sys.exit(1)
 elif option == '15':
         print()
-        write("\033[0m[\033[32m●\033[0m] \033[77;1mSedang memproses ...\033[0m")
+        play()
         sleep(1)
         home()
         user = input("\x1b[0m[\x1b[101;77;1m Username \x1b[0m] ")
@@ -301,7 +308,7 @@ elif option == '15':
         sys.exit(1)
 elif option == '16':
         print()
-        write("\033[0m[\033[32m●\033[0m] \033[77;1mSedang memproses ...\033[0m")
+        play()
         sleep(1)
         home()
         user = input("\x1b[0m[\x1b[101;77;1m Username \x1b[0m] ")
@@ -316,7 +323,7 @@ elif option == '16':
         sys.exit(1)
 elif option == '17':
         print()
-        write("\033[0m[\033[32m●\033[0m] \033[77;1mSedang memproses ...\033[0m")
+        play()
         sleep(1)
         home()
         user = input("\x1b[0m[\x1b[101;77;1m Username \x1b[0m] ")
@@ -331,7 +338,7 @@ elif option == '17':
         sys.exit(1)
 elif option == '18':
         print()
-        write("\033[0m[\033[32m●\033[0m] \033[77;1mSedang memproses ...\033[0m")
+        play()
         sleep(1)
         home()
         word = input("\x1b[0m[\x1b[106;90;1m Wordlist \x1b[0m] ")
@@ -345,7 +352,7 @@ elif option == '18':
         sys.exit(1)
 elif option == '19':
         print()
-        write("\033[0m[\033[32m●\033[0m] \033[77;1mSedang memproses ...\033[0m")
+        play()
         sleep(1)
         home()
         word = input("\x1b[0m[\x1b[106;90;1m Wordlist \x1b[0m] ")
@@ -359,7 +366,7 @@ elif option == '19':
         sys.exit(1)
 elif option == '20':
         print()
-        write("\033[0m[\033[32m●\033[0m] \033[77;1mSedang memproses ...\033[0m")
+        play()
         sleep(1)
         home()
         user = input("\x1b[0m[\x1b[101;77;1m Username \x1b[0m] ")
@@ -374,7 +381,7 @@ elif option == '20':
         sys.exit(1)
 elif option == '21':
         print()
-        write("\033[0m[\033[32m●\033[0m] \033[77;1mSedang memproses ...\033[0m")
+        play()
         sleep(1)
         home()
         user = input("\x1b[0m[\x1b[101;77;1m Username \x1b[0m] ")
@@ -389,7 +396,7 @@ elif option == '21':
         sys.exit(1)
 elif option == '22':
         print()
-        write("\033[0m[\033[32m●\033[0m] \033[77;1mSedang memproses ...\033[0m")
+        play()
         sleep(1)
         home()
         word = input("\x1b[0m[\x1b[106;90;1m Wordlist \x1b[0m] ")
@@ -403,7 +410,7 @@ elif option == '22':
         sys.exit(1)
 elif option == '23':
         print()
-        write("\033[0m[\033[32m●\033[0m] \033[77;1mSedang memproses ...\033[0m")
+        play()
         sleep(1)
         home()
         user = input("\x1b[0m[\x1b[101;77;1m Username \x1b[0m] ")
@@ -418,7 +425,7 @@ elif option == '23':
         sys.exit(1)
 elif option == '24':
         print()
-        write("\033[0m[\033[32m●\033[0m] \033[77;1mSedang memproses ...\033[0m")
+        play()
         sleep(1)
         home()
         user = input("\x1b[0m[\x1b[101;77;1m Username \x1b[0m] ")
@@ -431,7 +438,7 @@ elif option == '24':
         os.system("hydra -l %s -P %s %s rlogin" % (user, word, iphost))
         print()
         sys.exit(1)
-elif option.strip() in '& 25 lisensi'.split():
+elif option.strip() in '& 25 license'.split():
         print()
         os.system('nano LICENSE')
         print()
@@ -443,20 +450,20 @@ elif option.strip() in '# 26 info'.split():
         print(info)
         sleep(1)
         print()
-        input('[ Tekan Enter ]')
+        input('[ Back ]')
         restart()
-elif option.strip() in '* 27 perbarui'.split():
+elif option.strip() in '* 27 update'.split():
         print()
         os.system('git pull origin master')
         print()
-        input('\033[0m[ \033[32mTekan Enter \033[0m]')
+        input('\033[0m[ \033[32mBack \033[0m]')
         restart()
-elif option.strip() in '- 0 keluar'.split():
-        print("\n\033[0m[\033[1;91m!\033[0m] \033[1;77mKeluar dari program!")
+elif option.strip() in '- 0 exit'.split():
+        print("\n\033[0m[\033[1;91m!\033[0m] \033[1;77mExit the program!")
         print()
         sys.exit(1)
 else:
-        print("\n\033[0m[=\033[1;41;77m Pilihan Salah \033[0m=]")
+        print("\n\033[0m[=\033[1;41;77m Invalid Option \033[0m=]")
         print()
         sleep(1)
         restart()
