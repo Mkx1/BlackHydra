@@ -68,7 +68,7 @@ Important contact Email [**Outlook**](http://d_q16x@outlook.co.id)
 Join using my WhatsApp [**Online**](https://tinyurl.com/wel4alo)
 
 # License
-Anonymous tool is an open source license [`GPL 3`](https://opensource.org/licenses/gpl-license) © Github 2020
+BlackHydra tool is an open source license [`GPL 3`](https://opensource.org/licenses/gpl-license) © Github 2020
 
 ### LiberaPay:
 <noscript><a href="https://liberapay.com/stepbystepexe/donate"><img alt="Donate using Liberapay" src="https://liberapay.com/assets/widgets/donate.svg"></a></noscript>
