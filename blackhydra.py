@@ -23,7 +23,7 @@ NB          : Humans are not perfect
               To - Email: d_q16x@outlook.co.id
                  - WhatsApp: tinyurl.com/wel4alo
 
-[ Use this tool wisely. Thanks ] """
+[ \033[4mUse this tool wisely. Thanks \033[0m] """
 
 example = """\033[0;41;77;1m[          BlackHydra, My Github: @stepbystepexe         ]\033[0m"""
 
