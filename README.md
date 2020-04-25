@@ -16,7 +16,7 @@
   <sub><b>Screenshot</sub></b>
 </p>
 <p align="center">
-  <img src="Skrinsut.png" width="300">
+  <img src="Screenshot.png" width="300">
 </p>
 <h5>
 <p align="center">
