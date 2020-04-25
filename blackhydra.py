@@ -9,7 +9,7 @@ from time import sleep
 
 info = """
 Name        : BlackHydra
-Version     : 1.3 (Update: 11 March 2020, 2:00 PM)
+Version     : 1.2 (Update: 11 March 2020, 2:00 PM)
 Date        : 01 September 2019
 Author      : Nedi Senja
 Purpose     : Accidentally encrypted from THC Hydra
