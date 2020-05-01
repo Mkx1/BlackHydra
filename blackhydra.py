@@ -11,7 +11,7 @@ info = """
 Name        : BlackHydra
 Version     : 1.2 (Update: 11 March 2020, 2:00 PM)
 Date        : 01 September 2019
-Author      : Nedi Senja
+Author      : Mkx1
 Purpose     : Accidentally encrypted from THC Hydra
               even more simple.
 Thankyou    : Allah SWT.
@@ -25,7 +25,7 @@ NB          : Humans are not perfect
 
 [ \033[4mUse this tool wisely. Thanks \033[0m] """
 
-example = """\033[0;41;77;1m[          BlackHydra, My Github: @stepbystepexe         ]\033[0m"""
+example = """\033[0;41;77;1m[          BlackHydra, My Github: @Mkx1         ]\033[0m"""
 
 logo = """
   \033[0;37m█▀▀▀▄ █    █▀▀█ █▀▀▀ █  █   █  █ █   █ █▀▀▄ █▀▀▄ █▀▀█
